@@ -1,0 +1,129 @@
+/* google fonts < Bai Jamjuree > */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root{
+    --main-clr: hsl(171, 66%, 44%);
+    --main-two-clr: hsl(233, 100%, 69%);
+    --p-clr: hsl(201, 11%, 66%);
+    --header-clr: hsl(210, 10%, 33%);
+    --page-clr: #f5f6f8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 600;
+    color: var(--header-clr);
+}
+p,
+a,
+div{
+    font-weight: 400;
+    color: var(--p-clr);
+    text-decoration: none;
+}
+html{
+    font-size: 15px;
+}
+@media (max-width: 768px){
+    html{
+        font-size: 12px;
+    }
+}
+body{
+    overflow-x: hidden;
+}
+
+.header h1{
+    font-size: 2.4em;
+    text-align: center;
+}
+.header  p{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 35px;
+    margin: 20px auto 50px;
+    text-align: center;
+    width: 600px;
+}
+@media (max-width: 992px){
+    .header p{
+        width: 500px;
+    }
+}
+@media (max-width: 768px){
+    .header p{
+        width: 355px;
+    }
+}
+.btns{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+@media (max-width: 768px){
+    .btns{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.btn{
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    border-bottom: transparent 3px solid;
+}
+.btn i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.btn-1 i{
+    font-size: 25px;
+}
+.btn-1{
+    background-color: var(--main-clr);
+    border-bottom-color: hsl(171, 66%, 33%);
+    box-shadow: 0 5px 19px 0px var(--main-clr);
+}
+.btn-1:hover{
+    background-color: hsl(171, 55%, 51%);
+}
+.btn-2{
+    background-color: var(--main-two-clr);
+    border-bottom-color: hsl(233, 50%, 53%);
+    box-shadow: 0 5px 19px 0px var(--main-two-clr);
+}
+.btn-2:hover{
+    background-color: hsl(233, 66%, 66%);
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* start madia */
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* end madia */
